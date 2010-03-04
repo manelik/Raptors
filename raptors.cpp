@@ -7,13 +7,13 @@ class Raptor{
 public:
   float health, speed; //health ranges from zero to 10
   //  string name;
-
   float x,y,vx,vy;
   Raptor(){x=0.0; y=0.0;vx=0.0;vy=0.0;};
   Raptor(float,float);
   void Track(Raptor);
+  // Still not defining operations on raptors
   //  Raptor operator+(Raptor);
-  Raptor operator-(Raptor);
+  //Raptor operator-(Raptor);
 };
 
 
@@ -26,13 +26,21 @@ Raptor::Raptor(float a,float b){
   health= 10.0;
 }
 
+
+
 void Raptor::Track(Raptor RapB){
+  /* Raptor track routine
+     the raptor tracks RapB, just sets its velocity
+     so it runs in a straight line where target is
+   */
   Raptor Temp;
   float tspeed;
+  //We store relative position
   Temp.vx= (RapB.x-x);
   Temp.vy= (RapB.y-y);
+  //get actual distance
   tspeed= sqrt(Temp.vx*Temp.vx+Temp.vy*Temp.vy);
-
+  //normalize vector and mltiply by raptor speed
   vx=Temp.vx*speed/tspeed;
   vy=Temp.vy*speed/tspeed;
 }
