@@ -5,16 +5,37 @@ using namespace std;
 
 class Raptor{
 public:
-  float health, speed; //health ranges from zero to 10
+  float health; //health ranges from zero to 10
+  float hunger, speed; //hunger ranges from zero to 10
   //  string name;
   float x,y,vx,vy;
   Raptor(){x=0.0; y=0.0;vx=0.0;vy=0.0;};
   Raptor(float,float);
   void Track(Raptor);
+  void Hcheck();
   // Still not defining operations on raptors
   //  Raptor operator+(Raptor);
   //Raptor operator-(Raptor);
 };
+
+Raptor::Hcheck(){
+  /*
+    Basically updates the speed as function of health and hunger
+    master formula
+
+    speed = -(hunger-2.5)**2/6.25 +sqrt(8/5*health) + 19
+
+              -9:+1                0:4
+
+    dying-starving raptor moves at 10, healthy one moves at 25
+
+    hunger mood
+    0 wont attack
+    2.5 hungry, priority
+   */
+
+
+}
 
 
 Raptor::Raptor(float a,float b){
@@ -22,7 +43,7 @@ Raptor::Raptor(float a,float b){
   y=b;
   vx=0;
   vy=0;
-  speed= 24.0;
+  hunger= 0.0;
   health= 10.0;
 }
 
