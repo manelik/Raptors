@@ -1,3 +1,11 @@
 README FILE FOR RAPTORS
 
-RAPTORS IS BOUND TO BECOME THE GREAEST GAME  FEATURING RAPTORS
+RAPTORS IS BOUND TO BECOME THE GREAEST GAME FEATURING RAPTORS
+
+TO DO
+
+create some raptor's food, call them bunnies for the moment
+
+would be interesting to populate some map with bunnies and raptors
+raptors may have a hunger param, speed depends on hunger, may starve to death
+may attack and feed on other raptors if too hugry
