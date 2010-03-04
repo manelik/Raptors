@@ -2,6 +2,21 @@ README FILE FOR RAPTORS
 
 RAPTORS IS BOUND TO BECOME THE GREAEST GAME FEATURING RAPTORS
 
+STATUS
+
+The program just handles objects called raptors,
+the makefile throws an executable wich when run simulates a player chased by
+a raptor. the output sucks by now, is a multicolumn textfile in the format
+
+time player.x player.y charlie.x charlie.y
+
+it may be ploted easyly with gnuplot, just save the output to some
+'out.dat' and then
+>plot 'out.dat' using 2:3 gives the path followed by player
+
+and so on
+
+
 TO DO
 
 create some raptor's food, call them bunnies for the moment
