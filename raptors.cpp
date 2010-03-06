@@ -23,9 +23,9 @@ Raptor::Hcheck(){
     Basically updates the speed as function of health and hunger
     master formula
 
-    speed = -(hunger-2.5)**2/6.25 +sqrt(8/5*health) + 19
+    speed = 15 + health - 7/36*(hunger-4)**2
 
-              -9:+1                0:4
+             
 
     dying-starving raptor moves at 10, healthy one moves at 25
 
