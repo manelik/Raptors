@@ -27,7 +27,7 @@ Raptor::Hcheck(){
 
              
 
-    dying-starving raptor moves at 10, healthy one moves at 25
+    dying-starving raptor moves at 8, healthy one moves at 25
 
     hunger mood
     0 wont attack
