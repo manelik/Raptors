@@ -25,15 +25,14 @@ Raptor::Hcheck(){
 
     speed = 15 + health - 7/36*(hunger-4)**2
 
-             
-
     dying-starving raptor moves at 8, healthy one moves at 25
 
     hunger mood
     0 wont attack
-    2.5 hungry, priority
+    4 hungry, priority
    */
 
+  speed= 15.0+health-7/36*(hunger-4)*(hunger-4);
 
 }
 
