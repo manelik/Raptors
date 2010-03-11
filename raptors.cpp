@@ -18,7 +18,7 @@ public:
   //Raptor operator-(Raptor);
 };
 
-Raptor::Hcheck(){
+void Raptor::Hcheck(){
   /*
     Basically updates the speed as function of health and hunger
     master formula
@@ -33,7 +33,6 @@ Raptor::Hcheck(){
    */
 
   speed= 15.0+health-7/36*(hunger-4)*(hunger-4);
-
 }
 
 
