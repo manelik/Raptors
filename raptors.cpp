@@ -18,6 +18,18 @@ public:
   //Raptor operator-(Raptor);
 };
 
+class Bunny{
+public:
+  float health; //health ranges from 0 to 1
+  float speed;
+  float x,y,vx,vy;
+  Bunny(){x=0.0; y=0.0;vx=0.0;vy=0.0;};
+  Bunny(float,float);
+  void Track(Bunny);
+  void Avoid(Raptor);
+}
+
+
 void Raptor::Hcheck(){
   /*
     Basically updates the speed as function of health and hunger
@@ -64,6 +76,8 @@ void Raptor::Track(Raptor RapB){
   vx=Temp.vx*speed/tspeed;
   vy=Temp.vy*speed/tspeed;
 }
+
+/*MAIN MAIN MAIN*/
 
 int main ()
 {
