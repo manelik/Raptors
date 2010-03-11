@@ -43,6 +43,7 @@ Raptor::Raptor(float a,float b){
   vy=0;
   hunger= 0.0;
   health= 10.0;
+  Hcheck();
 }
 
 
