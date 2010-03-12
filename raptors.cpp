@@ -27,7 +27,7 @@ public:
   Bunny(float,float);
   void Track(Bunny);
   void Avoid(Raptor);
-}
+};
 
 
 void Raptor::Hcheck(){
